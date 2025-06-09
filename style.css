@@ -2048,6 +2048,70 @@ section, .card, .project-card, .skills-section, .skills-container, .timeline-ite
     margin-bottom: 32px;
 }
 
+.highlight {
+    background: linear-gradient(90deg, #ff0080, #7928ca, #007cf0, #00dfd8, #f6e27a, #c59d5f, #ff0080);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 2px;
+    animation: gradientMove 4s linear infinite;
+}
+@keyframes gradientMove {
+    to { background-position: 200%; }
+}
+
+.rainbow-btn {
+    background: linear-gradient(90deg, #ff0080, #7928ca, #007cf0, #00dfd8, #f6e27a, #c59d5f, #ff0080);
+    background-size: 300% 300%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 32px;
+    padding: 20px 60px;
+    box-shadow: 0 4px 24px #c59d5f55, 0 1px 0 #fffbe6;
+    transition: background-position 0.4s, box-shadow 0.4s, transform 0.2s;
+    animation: gradientMove 4s linear infinite;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px #0008;
+    cursor: pointer;
+    display: inline-block;
+}
+.rainbow-btn:hover {
+    background-position: right center;
+    box-shadow: 0 0 40px 10px #f6e27a99, 0 4px 24px #c59d5f99;
+    transform: scale(1.07);
+    color: #fff;
+}
+
+.rotating-role {
+    margin-top: 10px;
+    min-height: 48px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+#rotating-text {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0080, #7928ca, #007cf0, #00dfd8, #f6e27a, #c59d5f, #ff0080);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: gradientMove 4s linear infinite;
+    transition: opacity 0.4s;
+}
+
 
 
 

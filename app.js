@@ -262,3 +262,27 @@ if (backToTop) {
         }
     });
 }
+
+// --- Rotating Developer Role Text Effect ---
+const rotatingRoles = [
+    'Full Stack Developer',
+    'Frontend Developer',
+    'Backend Developer',
+    'UI/UX Enthusiast',
+    'MERN Stack Expert'
+];
+let rotatingIndex = 0;
+const rotatingText = document.getElementById('rotating-text');
+function showNextRole() {
+    if (!rotatingText) return;
+    rotatingText.style.opacity = 0;
+    setTimeout(() => {
+        rotatingText.textContent = rotatingRoles[rotatingIndex];
+        rotatingText.style.opacity = 1;
+        rotatingIndex = (rotatingIndex + 1) % rotatingRoles.length;
+    }, 400);
+}
+if (rotatingText) {
+    rotatingText.textContent = rotatingRoles[0];
+    setInterval(showNextRole, 2000);
+}
