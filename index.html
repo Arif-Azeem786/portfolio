@@ -5,22 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Arif Azeem - Portfolio</title>
 
-  <!-- Critical CSS inline or link (kept as style.css) -->
   <link rel="stylesheet" href="style.optimized.css">
-
-  <!-- Boxicons and AOS (defer AOS script init in JS) -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
 </head>
 <body data-theme="dark">
   <div class="container">
-    <!-- Lightweight background: poster image as fallback instead of large autoplay video -->
     <div class="bg-poster" data-bg="/public/optimized/galaxy-poster-1280.webp" aria-hidden="true"></div>
 
     <header data-aos="fade-down" data-aos-duration="1000">
       <div class="left">
-        <!-- optimized logo (picture) -->
         <picture>
           <source type="image/webp" srcset="/public/optimized/ariflogo-80-320.webp 320w, /public/optimized/ariflogo-80-640.webp 640w" sizes="40px">
           <img src="/public/optimized/ariflogo-80-640.jpg" alt="logo" width="40" height="40" loading="lazy" decoding="async">
@@ -70,17 +65,19 @@
       </div>
     </aside>
 
-    <!-- Hero section (no heavy autoplay video) -->
+    <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-info" data-aos="fade-right" data-aos-duration="1000">
         <div class="hero-title" data-translate="portfolio_title"><i class='bx bxl-sketch'></i> Full Stack Developer Portfolio</div>
-        <h1 data-translate="hero_title">Providing <span class="gradient">the best</span> Project <span class="gradient">Experience</span></h1>
+        <h1 data-translate="hero_title">Building fast, production-ready MERN apps — deployed & maintained</h1>
         <div class="rotating-role"><span id="rotating-text">Full Stack Developer</span></div>
-        <p data-translate="hero_description">Demonstrate expertise in React, Node.js, Express.js, and MongoDB, including experience in building and deploying MERN-based applications.</p>
-        <button type="button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-translate="contact_button"><i class='bx bx-send'></i> Contact Me</button>
+        <p>I've built and deployed multiple MERN applications (React + Node + Express + MongoDB). Check my live projects and GitHub for source code and recent contributions.</p>
+        <div style="display:flex;gap:12px;margin-top:16px;">
+          <a class="resume-btn" href="ArifAzeem_resume.pdf" download>Download Resume</a>
+          <button type="button" onclick="window.open('https://github.com/224G1A0506', '_blank')">View GitHub</button>
+        </div>
       </div>
 
-      <!-- small decorative video or animated WebP (low-res) -->
       <div class="skills-video-box" aria-hidden="true">
         <video class="skills-video" playsinline muted loop preload="metadata" poster="/public/optimized/hero-360-poster-640.webp" width="560" height="315" aria-hidden="true">
           <source src="assets/video/hero-480.mp4" type="video/mp4">
@@ -88,26 +85,24 @@
       </div>
     </section>
 
-    <!-- About section (images use <picture>) -->
+    <!-- ABOUT -->
     <section class="info-section" id="about">
-      <h1 data-translate="hello_there">Hello,There👋</h1>
+      <h1 data-translate="hello_there">Hello, There 👋</h1>
       <div class="info-cards">
         <article class="card">
-          <h2 data-translate="hi_there">Hi there, I'm Arif</h2>
-          <p data-translate="about_description">With more than 1 year of experience, I have honed my skills in both frontend and backend dev, creating dynamic and responsive websites.</p>
+          <h2 data-translate="hi_there">Hi — I'm Arif</h2>
+          <p><strong>2+ years</strong> building web apps and tooling with the MERN stack. Currently a Product Developer Intern at <em>SETV Global</em> — shipping features, fixing production issues, and improving performance across services.</p>
 
-          <!-- grid1 optimized picture -->
           <picture>
             <source type="image/webp" srcset="/public/optimized/grid1-320.webp 320w, /public/optimized/grid1-640.webp 640w, /public/optimized/grid1-1280.webp 1280w" sizes="(max-width:600px) 90vw, 30vw">
-            <img src="/public/optimized/grid1-640.jpg" alt="grid" loading="lazy" decoding="async" style="max-width:100%;height:auto;">
+            <img src="/public/optimized/grid1-640.jpg" alt="about image" loading="lazy" decoding="async" style="max-width:100%;height:auto;">
           </picture>
         </article>
 
         <article class="card">
           <h2 data-translate="tech_stack">Tech Stack</h2>
-          <p data-translate="tech_description">I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.</p>
+          <p>React, Node.js, Express, MongoDB, JavaScript (ES6+), HTML5/CSS3. Familiar with deployment (Render, Vercel), CI/CD basics, and image/video optimization for production.</p>
 
-          <!-- grid2 optimized picture -->
           <picture>
             <source type="image/webp" srcset="/public/optimized/grid2-320.webp 320w, /public/optimized/grid2-640.webp 640w, /public/optimized/grid2-1280.webp 1280w" sizes="(max-width:600px) 90vw, 30vw">
             <img src="/public/optimized/grid2-640.jpg" alt="tech stack" loading="lazy" decoding="async" style="max-width:100%;height:auto;">
@@ -115,19 +110,17 @@
         </article>
 
         <article class="card">
-          <h2 data-translate="flexible">I'm very flexible with time zone communications & locations</h2>
-          <p data-translate="location">I'm based in India and open to remote work worldwide.</p>
+          <h2 data-translate="flexible">Open to remote roles</h2>
+          <p>Based in India — available for remote work worldwide. Flexible with communication across time zones.</p>
 
-          <!-- glob poster optimized -->
           <video src="assets/video/glob-360.mp4" playsinline muted loop preload="metadata" poster="/public/optimized/glob-poster-640.webp" width="300" height="170" aria-hidden="true"></video>
           <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-translate="contact_button"><i class='bx bx-send'></i> Contact Me</button>
         </article>
 
         <article class="card">
-          <h2 data-translate="passion">My Passion for Coding</h2>
-          <p data-translate="passion_description">I love solving problems and building things through code. Programming isn't just my profession—it's my passion. I enjoy exploring new technologies, and enhancing my skills.</p>
+          <h2 data-translate="passion">My Passion</h2>
+          <p>I enjoy building performant user experiences, debugging hard bugs, and learning modern tooling. Lately I’ve focused on improving load performance and accessibility across projects.</p>
 
-          <!-- grid4 optimized picture -->
           <picture>
             <source type="image/webp" srcset="/public/optimized/grid4-320.webp 320w, /public/optimized/grid4-640.webp 640w, /public/optimized/grid4-1280.webp 1280w" sizes="(max-width:600px) 90vw, 30vw">
             <img src="/public/optimized/grid4-640.jpg" alt="passion" loading="lazy" decoding="async" style="max-width:100%;height:auto;">
@@ -136,7 +129,7 @@
       </div>
     </section>
 
-    <!-- Projects: project videos lazy-load only when hovered -->
+    <!-- PROJECTS -->
     <section class="my-project" id="projects">
       <h1 data-translate="my_projects">My Projects 👨‍💻</h1>
 
@@ -146,9 +139,9 @@
           <div class="hover-sign">👆</div>
         </div>
         <div class="project-info">
-          <h3>Connectify <span class="gradient">Social Media</span> App</h3>
-          <p>A global social media platform built with MERN stack, offering features similar to Instagram. Users can share posts, follow, like and comment.</p>
-          <button onclick="window.open('https://connectify-1-ipmc.onrender.com/', '_blank')"><i class='bx bx-link-external'></i> Website</button>
+          <h3>Connectify — Social Media App</h3>
+          <p>MERN-based social platform with posts, likes, comments and real-time interactions. I built frontend components, API endpoints and helped deploy it to Render. <a href="https://connectify-1-ipmc.onrender.com/" target="_blank">Live</a></p>
+          <button onclick="window.open('https://github.com/224G1A0506', '_blank')"><i class='bx bx-link-external'></i> Source</button>
         </div>
       </div>
 
@@ -158,25 +151,95 @@
           <div class="hover-sign">👆</div>
         </div>
         <div class="project-info">
-          <h3>Modern <span class="gradient">Portfolio</span> Website</h3>
-          <p>A sleek and responsive portfolio website showcasing my work and skills. Built with HTML5, CSS3, and JavaScript.</p>
-          <button onclick="window.open('#')"><i class='bx bx-link-external'></i> Website</button>
+          <h3>Modern Portfolio</h3>
+          <p>A responsive portfolio site (this one) with careful performance tuning: image optimization, lazy-loading, and responsive media. Live on GitHub Pages / your host.</p>
+          <button onclick="window.open('#')"><i class='bx bx-link-external'></i> Demo</button>
         </div>
       </div>
     </section>
 
-    <!-- rest of sections (skills, internship, contact, footer) remain mostly the same but images use lazy/picture -->
-    <!-- Contact -->
+    <!-- EXPERIENCE / INTERNSHIP -->
+    <section class="internship-section" id="internship">
+      <h1 data-translate="current_experience">Current Experience</h1>
+
+      <div class="internship-card">
+        <div class="internship-info">
+          <h1>Product Developer Intern <span class="gradient">@ SETV Global</span></h1>
+          <p><strong>2024 – Present</strong></p>
+          <p>Working on product features, performance improvements, and backend APIs for the company's healthcare platform.</p>
+
+          <div class="internship-details">
+            <h3>Recent contributions</h3>
+            <ul>
+              <li>Improved page load times by optimizing images and lazy-loading media.</li>
+              <li>Implemented API endpoints for user activity tracking and reporting.</li>
+              <li>Wrote unit tests and helped deploy features via CI/CD to staging and production.</li>
+            </ul>
+          </div>
+
+          <button onclick="window.open('https://www.setvglobal.com/', '_blank')"><i class='bx bx-link-external' ></i> Company Website</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / CERTS / EDUCATION etc (keep but updated years) -->
+    <section class="journey-section" id="journey">
+      <h1>My Journey 🚀</h1>
+      <div class="journey-timeline">
+        <div class="journey-step achieved">
+          <span class="step-icon">🎓</span>
+          <div class="step-content">
+            <h3>Started B.Tech in Computer Science</h3>
+            <p>2022 — Srinivasa Ramanujan Institute of Technology</p>
+          </div>
+        </div>
+
+        <div class="journey-step achieved">
+          <span class="step-icon">💻</span>
+          <div class="step-content">
+            <h3>Learned MERN & built projects</h3>
+            <p>2023 — built full-stack applications and deployed prototypes</p>
+          </div>
+        </div>
+
+        <div class="journey-step achieved">
+          <span class="step-icon">🌐</span>
+          <div class="step-content">
+            <h3>Launched portfolio & projects</h3>
+            <p>2024 — deployed portfolio and first production apps</p>
+          </div>
+        </div>
+
+        <div class="journey-step current">
+          <span class="step-icon">🏢</span>
+          <div class="step-content">
+            <h3>Product Developer Intern @ SETV Global</h3>
+            <p>2024–2025 — shipping product features and performance improvements</p>
+          </div>
+        </div>
+
+        <div class="journey-step current">
+          <span class="step-icon">🚀</span>
+          <div class="step-content">
+            <h3>Continuing to learn & ship</h3>
+            <p>2025 — improving code quality, performance, and preparing for full-time roles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section class="contact-section" id="contact">
-      <h1 data-translate="lets_talk">Let's talk😊</h1>
+      <h1 data-translate="lets_talk">Let's talk 😊</h1>
+
       <div class="social-box">
         <a href="tel:6300789328"><i class='bx bxs-phone'></i> <span class="highlight">+91 6300789328</span></a>
-        <a href="mailto:6300789328"><i class='bx bxl-telegram' ></i> <span class="highlight">6300789328</span></a>
+        <a href="mailto:arif@example.com"><i class='bx bxl-telegram' ></i> <span class="highlight">arif@example.com</span></a>
         <a href="https://www.linkedin.com/in/arif-azeem-7282782a3/"><i class='bx bxl-linkedin-square' ></i> <span class="highlight">Arif Azeem</span></a>
       </div>
 
       <div class="contact-box">
-        <p>Whether you're looking to build a new website or improve existing work, I'm here to help.</p>
+        <p>Looking to hire a full stack developer or collaborate on a project? Reach out — I reply quickly.</p>
         <form action="mailto:6300789328" method="post" enctype="text/plain">
           <p>Full Name</p>
           <input name="name" placeholder="Your Full name" type="text" required>
@@ -203,9 +266,7 @@
     </div>
   </div>
 
-  <!-- Scripts: defer for non-blocking load -->
   <script src="lazy-bg.js" defer></script>
   <script src="app.optimized.js" defer></script>
-  <!-- AOS script loaded via CDN but init in app.optimized.js -->
 </body>
 </html>
